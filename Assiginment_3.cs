@@ -19,7 +19,7 @@ namespace BITM_Works
         string[] Order = new string[arraySize];
         int[] Quantity = new int[arraySize];
         double[] totalPrice = new double[arraySize];
-
+        string Result;
         int Index = 0;
         public Assiginment_3()
         {
@@ -40,6 +40,8 @@ namespace BITM_Works
                     Order[Index] = orderComboBox.Text;
                     Quantity[Index] = Convert.ToInt32(quantityNumericUpDown.Value);
                     totalPrice[Index] = Quantity[Index] * PiceCount(orderComboBox.Text);
+                    DisplayCustomerInformation(Index);
+                    Index++;                
                 }
                 else
                 {
@@ -74,6 +76,18 @@ namespace BITM_Works
             {
                 return 0;
             }
+        }
+
+        private void DisplayCustomerInformation(int indexCount)
+        {
+            Result = "";
+            for (int i = 0; i <=indexCount; i++)
+            {
+                Result+= "\n\n No: "+i+"\n Name: "+customerName[i]+"\n Contarcrt No: "+customerContract[i]+
+                    "\n Addesess: "+customerAddress[i]+"\n Item: "+Order[i]+"\n Quantity: "+Quantity[i]+"\n Total Price: "+totalPrice[i]+"\n \n \n";
+            }
+
+            resultRichTextBox.Text = "Customer Information.. " + Result;
         }
     }
 }

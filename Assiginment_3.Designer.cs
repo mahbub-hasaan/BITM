@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.resultRichTextBox = new System.Windows.Forms.RichTextBox();
             this.coffeeGroupBox = new System.Windows.Forms.GroupBox();
             this.customerNameLabel = new System.Windows.Forms.Label();
             this.customerContractLabel = new System.Windows.Forms.Label();
@@ -45,13 +45,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.quantityNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // resultRichTextBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(653, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(293, 445);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.resultRichTextBox.Location = new System.Drawing.Point(653, 12);
+            this.resultRichTextBox.Name = "resultRichTextBox";
+            this.resultRichTextBox.Size = new System.Drawing.Size(293, 445);
+            this.resultRichTextBox.TabIndex = 0;
+            this.resultRichTextBox.Text = "";
             // 
             // coffeeGroupBox
             // 
@@ -177,7 +177,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 469);
             this.Controls.Add(this.coffeeGroupBox);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.resultRichTextBox);
             this.Name = "Assiginment_3";
             this.Text = "Assiginment_3";
             this.coffeeGroupBox.ResumeLayout(false);
@@ -189,7 +189,7 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox resultRichTextBox;
         private System.Windows.Forms.GroupBox coffeeGroupBox;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.ComboBox orderComboBox;
