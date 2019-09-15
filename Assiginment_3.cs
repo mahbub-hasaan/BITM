@@ -18,18 +18,33 @@ namespace BITM_Works
         string[] customerAddress = new string[arraySize];
         string[] Order = new string[arraySize];
         int[] Quantity = new int[arraySize];
+        double[] totalPrice = new double[arraySize];
 
         int Index = 0;
         public Assiginment_3()
         {
             InitializeComponent();
+            quantityNumericUpDown.Maximum = 100000;
+            quantityNumericUpDown.Minimum = 1;
         }
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
             if (Index < arraySize)
             {
-
+                if(nameTextBox.Text!="" && contaractTextBox.Text!="" && addressTextBox.Text!="" && orderComboBox.Text != "")
+                {
+                    customerName[Index] = nameTextBox.Text;
+                    customerContract[Index] = contaractTextBox.Text;
+                    customerAddress[Index] = addressTextBox.Text;
+                    Order[Index] = orderComboBox.Text;
+                    Quantity[Index] = Convert.ToInt32(quantityNumericUpDown.Value);
+                    totalPrice[Index] = Quantity[Index] * PiceCount(orderComboBox.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Input!");
+                }
             }
             else
             {
@@ -37,7 +52,7 @@ namespace BITM_Works
             }
         }
 
-        private int PiceCount(string item)
+        private double PiceCount(string item)
         {
             if (item == "Black")
             {

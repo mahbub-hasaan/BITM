@@ -37,11 +37,12 @@
             this.quantityLabel = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.contaractTextBox = new System.Windows.Forms.TextBox();
-            this.AddressTextBox = new System.Windows.Forms.TextBox();
-            this.OrderComboBox = new System.Windows.Forms.ComboBox();
-            this.quantityTextBox = new System.Windows.Forms.TextBox();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.orderComboBox = new System.Windows.Forms.ComboBox();
             this.saveButton = new System.Windows.Forms.Button();
+            this.quantityNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.coffeeGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quantityNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -54,10 +55,10 @@
             // 
             // coffeeGroupBox
             // 
+            this.coffeeGroupBox.Controls.Add(this.quantityNumericUpDown);
             this.coffeeGroupBox.Controls.Add(this.saveButton);
-            this.coffeeGroupBox.Controls.Add(this.quantityTextBox);
-            this.coffeeGroupBox.Controls.Add(this.OrderComboBox);
-            this.coffeeGroupBox.Controls.Add(this.AddressTextBox);
+            this.coffeeGroupBox.Controls.Add(this.orderComboBox);
+            this.coffeeGroupBox.Controls.Add(this.addressTextBox);
             this.coffeeGroupBox.Controls.Add(this.contaractTextBox);
             this.coffeeGroupBox.Controls.Add(this.nameTextBox);
             this.coffeeGroupBox.Controls.Add(this.quantityLabel);
@@ -133,32 +134,25 @@
             this.contaractTextBox.Size = new System.Drawing.Size(254, 20);
             this.contaractTextBox.TabIndex = 2;
             // 
-            // AddressTextBox
+            // addressTextBox
             // 
-            this.AddressTextBox.Location = new System.Drawing.Point(239, 160);
-            this.AddressTextBox.Name = "AddressTextBox";
-            this.AddressTextBox.Size = new System.Drawing.Size(254, 20);
-            this.AddressTextBox.TabIndex = 3;
+            this.addressTextBox.Location = new System.Drawing.Point(239, 160);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(254, 20);
+            this.addressTextBox.TabIndex = 3;
             // 
-            // OrderComboBox
+            // orderComboBox
             // 
-            this.OrderComboBox.FormattingEnabled = true;
-            this.OrderComboBox.Items.AddRange(new object[] {
+            this.orderComboBox.FormattingEnabled = true;
+            this.orderComboBox.Items.AddRange(new object[] {
             "Black",
             "Cold",
             "Hot",
             "Regular"});
-            this.OrderComboBox.Location = new System.Drawing.Point(239, 222);
-            this.OrderComboBox.Name = "OrderComboBox";
-            this.OrderComboBox.Size = new System.Drawing.Size(254, 21);
-            this.OrderComboBox.TabIndex = 4;
-            // 
-            // quantityTextBox
-            // 
-            this.quantityTextBox.Location = new System.Drawing.Point(239, 256);
-            this.quantityTextBox.Name = "quantityTextBox";
-            this.quantityTextBox.Size = new System.Drawing.Size(254, 20);
-            this.quantityTextBox.TabIndex = 5;
+            this.orderComboBox.Location = new System.Drawing.Point(239, 222);
+            this.orderComboBox.Name = "orderComboBox";
+            this.orderComboBox.Size = new System.Drawing.Size(254, 21);
+            this.orderComboBox.TabIndex = 4;
             // 
             // saveButton
             // 
@@ -169,6 +163,13 @@
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            // 
+            // quantityNumericUpDown
+            // 
+            this.quantityNumericUpDown.Location = new System.Drawing.Point(239, 256);
+            this.quantityNumericUpDown.Name = "quantityNumericUpDown";
+            this.quantityNumericUpDown.Size = new System.Drawing.Size(254, 20);
+            this.quantityNumericUpDown.TabIndex = 7;
             // 
             // Assiginment_3
             // 
@@ -181,6 +182,7 @@
             this.Text = "Assiginment_3";
             this.coffeeGroupBox.ResumeLayout(false);
             this.coffeeGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quantityNumericUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -190,9 +192,8 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.GroupBox coffeeGroupBox;
         private System.Windows.Forms.Button saveButton;
-        private System.Windows.Forms.TextBox quantityTextBox;
-        private System.Windows.Forms.ComboBox OrderComboBox;
-        private System.Windows.Forms.TextBox AddressTextBox;
+        private System.Windows.Forms.ComboBox orderComboBox;
+        private System.Windows.Forms.TextBox addressTextBox;
         private System.Windows.Forms.TextBox contaractTextBox;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label quantityLabel;
@@ -200,5 +201,6 @@
         private System.Windows.Forms.Label AddressLabel;
         private System.Windows.Forms.Label customerContractLabel;
         private System.Windows.Forms.Label customerNameLabel;
+        private System.Windows.Forms.NumericUpDown quantityNumericUpDown;
     }
 }
