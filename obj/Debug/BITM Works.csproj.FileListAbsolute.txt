@@ -1,0 +1,11 @@
+F:\BITM\BITM Works\obj\Debug\BITM Works.csprojAssemblyReference.cache
+F:\BITM\BITM Works\obj\Debug\BITM_Works.Home.resources
+F:\BITM\BITM Works\obj\Debug\BITM_Works.Properties.Resources.resources
+F:\BITM\BITM Works\obj\Debug\BITM Works.csproj.GenerateResource.cache
+F:\BITM\BITM Works\obj\Debug\BITM Works.csproj.CoreCompileInputs.cache
+F:\BITM\BITM Works\bin\Debug\BITM Works.exe.config
+F:\BITM\BITM Works\bin\Debug\BITM Works.exe
+F:\BITM\BITM Works\bin\Debug\BITM Works.pdb
+F:\BITM\BITM Works\obj\Debug\BITM_Works.Assiginment_3.resources
+F:\BITM\BITM Works\obj\Debug\BITM Works.exe
+F:\BITM\BITM Works\obj\Debug\BITM Works.pdb
