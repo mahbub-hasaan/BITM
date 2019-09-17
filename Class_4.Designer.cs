@@ -31,6 +31,7 @@
             this.addButton = new System.Windows.Forms.Button();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.ShowRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.AgeTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // addButton
@@ -58,12 +59,20 @@
             this.ShowRichTextBox.TabIndex = 2;
             this.ShowRichTextBox.Text = "";
             // 
+            // AgeTextBox
+            // 
+            this.AgeTextBox.Location = new System.Drawing.Point(12, 55);
+            this.AgeTextBox.Name = "AgeTextBox";
+            this.AgeTextBox.Size = new System.Drawing.Size(166, 20);
+            this.AgeTextBox.TabIndex = 1;
+            // 
             // Class_4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(828, 476);
             this.Controls.Add(this.ShowRichTextBox);
+            this.Controls.Add(this.AgeTextBox);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.addButton);
             this.Name = "Class_4";
@@ -78,5 +87,6 @@
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.RichTextBox ShowRichTextBox;
+        private System.Windows.Forms.TextBox AgeTextBox;
     }
 }

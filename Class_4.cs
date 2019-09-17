@@ -13,6 +13,7 @@ namespace BITM_Works
     public partial class Class_4 : Form
     {
         List<string> userName = new List<string> { };
+        List<int> userAge= new List<int> { };
         public Class_4()
         {
             InitializeComponent();
@@ -22,16 +23,20 @@ namespace BITM_Works
         {
             
             userName.Add(nameTextBox.Text);
+            userAge.Add(Convert.ToInt32(AgeTextBox.Text));
             ShowData();
+            MessageBox.Show("Added");
+            AgeTextBox.Text = "";
+            nameTextBox.Text = "";
         }
 
 
         private void ShowData()
         {
             ShowRichTextBox.Text = "";
-            foreach (string names in userName)
+            for(int i=0; i <userAge.Count();i++)
             {
-                ShowRichTextBox.Text += names + "\n";
+                ShowRichTextBox.Text +="Name: " +userName[i] + "\n Age: "+userAge[i]+"\n\n\n";
             }
         }
     }
