@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>BITM_Works</RootNamespace>
     <AssemblyName>BITM Works</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,6 +53,12 @@
     <Compile Include="Assiginment_3.Designer.cs">
       <DependentUpon>Assiginment_3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class_4.Designer.cs">
+      <DependentUpon>Class_4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Assiginment_3.resx">
       <DependentUpon>Assiginment_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class_4.resx">
+      <DependentUpon>Class_4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -74,6 +84,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
