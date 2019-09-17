@@ -21,13 +21,28 @@ namespace BITM_Works
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            
+
+            try
+            {
+                if (!String.IsNullOrEmpty(AgeTextBox.Text))
+                {
+                    userAge.Add(Convert.ToInt32(AgeTextBox.Text));
+                    ShowData();
+                    MessageBox.Show("Added");
+                    AgeTextBox.Text = "";
+                    nameTextBox.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Enter Age");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
             userName.Add(nameTextBox.Text);
-            userAge.Add(Convert.ToInt32(AgeTextBox.Text));
-            ShowData();
-            MessageBox.Show("Added");
-            AgeTextBox.Text = "";
-            nameTextBox.Text = "";
         }
 
 
