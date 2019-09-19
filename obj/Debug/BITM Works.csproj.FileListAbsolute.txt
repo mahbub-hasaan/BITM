@@ -37,3 +37,4 @@ D:\Day5\BITM\obj\Debug\BITM Works.csproj.CoreCompileInputs.cache
 D:\Day5\BITM\obj\Debug\BITM Works.exe
 D:\Day5\BITM\obj\Debug\BITM Works.pdb
 D:\Day5\BITM\obj\Debug\BITM_Works.ClasssFive.resources
+F:\BITM\BITM Works\obj\Debug\BITM_Works.ClasssFive.resources

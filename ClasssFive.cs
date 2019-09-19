@@ -45,7 +45,7 @@ namespace BITM_Works
                     {
                         if (!String.IsNullOrEmpty(ageTextBox.Text) && !Regex.IsMatch(ageTextBox.Text, "[^0-9]"))
                         {
-                            if (!String.IsNullOrEmpty(gpaTextBox.Text) &&!Regex.IsMatch(gpaTextBox.Text, "[^0-9]") && Convert.ToDouble(gpaTextBox.Text)>=0 && Convert.ToDouble(gpaTextBox.Text)<=4)
+                            if (!String.IsNullOrEmpty(gpaTextBox.Text) &&!Regex.IsMatch(gpaTextBox.Text, "/^[0-9]+(\\.[0-9]+)?$") && Convert.ToDouble(gpaTextBox.Text)>=0 && Convert.ToDouble(gpaTextBox.Text)<=4)
                             {
                                 studentId.Add(idTextBox.Text);
                                 studentName.Add(nameTextBox.Text);
@@ -108,29 +108,44 @@ namespace BITM_Works
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
+            int searchIndex;
             displayRichTextBox.Clear();
             if (idRadioButton.Checked)
             {
-                int id = studentId.IndexOf(studentId.Find(x => x.Equals(idTextBox.Text)));
-                    
+                searchIndex = studentId.IndexOf(studentId.Find(x => x.Equals(idTextBox.Text)));
+                SearchStudent(searchIndex);
             }
             else if (nameRadioButton.Checked)
             {
-                foreach (string Name in studentName.FindAll(x => x.Contains(nameTextBox.Text)))
-                    displayRichTextBox.Text += Name + "\n";
+                searchIndex = studentName.IndexOf(studentName.Find(x => x.Equals(nameTextBox.Text)));
+                SearchStudent(searchIndex);
             }
             else if (mobileRadioButton.Checked)
             {
-                foreach (string Mobile in studentMobile.FindAll(x => x.Contains(mobileTextBox.Text)))
-                    displayRichTextBox.Text += Mobile + "\n";
+                searchIndex = studentMobile.IndexOf(studentMobile.Find(x => x.Equals(mobileTextBox.Text)));
+                SearchStudent(searchIndex);
             }
             else
             {
-                MessageBox.Show("Select an option");
-
+                MessageBox.Show(text: "Select an option");
+                return;
             }
         }
 
-        
+
+        private void SearchStudent(int i)
+        {
+            if (!i.Equals(-1))
+            {
+                displayRichTextBox.Clear();
+                displayRichTextBox.Text += "Id: " + studentId[i] + "\n Name: " + studentName[i] + "\n Mobile: " + studentMobile[i] + "\n Age: " + studentAge[i] + "\n Address: " + studentAddress[i] + "\n GPA: " + studentGpaPoint[i] + "\n \n";
+            }
+            else
+            {
+                MessageBox.Show("No information found");
+                return;
+            }
+        }
+
     }
 }
