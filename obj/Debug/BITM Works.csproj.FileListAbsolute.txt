@@ -38,3 +38,18 @@ D:\Day5\BITM\obj\Debug\BITM Works.exe
 D:\Day5\BITM\obj\Debug\BITM Works.pdb
 D:\Day5\BITM\obj\Debug\BITM_Works.ClasssFive.resources
 F:\BITM\BITM Works\obj\Debug\BITM_Works.ClasssFive.resources
+F:\Day7\BITM\bin\Debug\BITM Works.exe.config
+F:\Day7\BITM\bin\Debug\BITM Works.exe
+F:\Day7\BITM\bin\Debug\BITM Works.pdb
+F:\Day7\BITM\obj\Debug\BITM Works.csprojAssemblyReference.cache
+F:\Day7\BITM\obj\Debug\BITM_Works.Assiginment_3.resources
+F:\Day7\BITM\obj\Debug\BITM_Works.AssignmentFour.resources
+F:\Day7\BITM\obj\Debug\BITM_Works.ClasssFive.resources
+F:\Day7\BITM\obj\Debug\BITM_Works.Class_4.resources
+F:\Day7\BITM\obj\Debug\BITM_Works.Home.resources
+F:\Day7\BITM\obj\Debug\BITM_Works.Item.resources
+F:\Day7\BITM\obj\Debug\BITM_Works.Properties.Resources.resources
+F:\Day7\BITM\obj\Debug\BITM Works.csproj.GenerateResource.cache
+F:\Day7\BITM\obj\Debug\BITM Works.csproj.CoreCompileInputs.cache
+F:\Day7\BITM\obj\Debug\BITM Works.exe
+F:\Day7\BITM\obj\Debug\BITM Works.pdb

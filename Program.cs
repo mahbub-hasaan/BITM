@@ -16,7 +16,7 @@ namespace BITM_Works
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ClasssFive());
+            Application.Run(new Item());
         }
     }
 }
