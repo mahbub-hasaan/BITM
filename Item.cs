@@ -23,5 +23,11 @@ namespace BITM_Works
             string command = @"INSERT INTO [dbo].[Item]([ItemName],[ItemPrice],[Stock])VALUES('"+nameTextBox.Text+"','"+priceTextBox.Text+"','"+stockTextBox.Text+"')";
             MessageBox.Show(db.ExecuteNoncommand(command));
         }
+
+        private void ShowButton_Click(object sender, EventArgs e)
+        {
+            string command = @"Select*from Item";
+            showDataGridView.DataSource=db.GetData(command);
+        }
     }
 }
