@@ -45,5 +45,21 @@ namespace BITM_Works
                 return null;
             }
         }
+
+        public string Delete(string command)
+        {
+            try
+            {
+                SqlCommand sqlCommand = new SqlCommand(command, connection);
+                connection.Open();
+                sqlCommand.ExecuteNonQuery();
+                connection.Close();
+                return "Successfully Deleted";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
     }
 }

@@ -38,8 +38,13 @@
             this.showDataGridView = new System.Windows.Forms.DataGridView();
             this.ShowButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.deleteTextBox = new System.Windows.Forms.TextBox();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.showDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // nameTextBox
@@ -92,7 +97,7 @@
             // 
             // AddButton
             // 
-            this.AddButton.Location = new System.Drawing.Point(99, 135);
+            this.AddButton.Location = new System.Drawing.Point(99, 115);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(100, 23);
             this.AddButton.TabIndex = 5;
@@ -110,7 +115,7 @@
             // 
             // ShowButton
             // 
-            this.ShowButton.Location = new System.Drawing.Point(205, 135);
+            this.ShowButton.Location = new System.Drawing.Point(205, 115);
             this.ShowButton.Name = "ShowButton";
             this.ShowButton.Size = new System.Drawing.Size(101, 23);
             this.ShowButton.TabIndex = 7;
@@ -130,16 +135,55 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(326, 183);
+            this.groupBox1.Size = new System.Drawing.Size(326, 153);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Items";
+            this.groupBox1.Text = "Add Items";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.DeleteButton);
+            this.groupBox2.Controls.Add(this.deleteTextBox);
+            this.groupBox2.Location = new System.Drawing.Point(13, 173);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(326, 74);
+            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Delete Item";
+            // 
+            // deleteTextBox
+            // 
+            this.deleteTextBox.Location = new System.Drawing.Point(99, 31);
+            this.deleteTextBox.Name = "deleteTextBox";
+            this.deleteTextBox.Size = new System.Drawing.Size(125, 20);
+            this.deleteTextBox.TabIndex = 0;
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(245, 29);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.DeleteButton.TabIndex = 1;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(23, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Enter Item Id";
             // 
             // Item
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.showDataGridView);
             this.Name = "Item";
@@ -147,6 +191,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.showDataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -163,5 +209,9 @@
         private System.Windows.Forms.DataGridView showDataGridView;
         private System.Windows.Forms.Button ShowButton;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.TextBox deleteTextBox;
+        private System.Windows.Forms.Label label4;
     }
 }

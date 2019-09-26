@@ -22,12 +22,25 @@ namespace BITM_Works
         {
             string command = @"INSERT INTO [dbo].[Item]([ItemName],[ItemPrice],[Stock])VALUES('"+nameTextBox.Text+"','"+priceTextBox.Text+"','"+stockTextBox.Text+"')";
             MessageBox.Show(db.ExecuteNoncommand(command));
+            ShowItems();
         }
 
         private void ShowButton_Click(object sender, EventArgs e)
         {
+            ShowItems();
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            string command = @"DELETE FROM [dbo].[Item] WHERE Id='"+deleteTextBox.Text+"'";           
+            MessageBox.Show(db.Delete(command));
+            ShowItems();
+        }
+
+        private void ShowItems()
+        {
             string command = @"Select*from Item";
-            showDataGridView.DataSource=db.GetData(command);
+            showDataGridView.DataSource = db.GetData(command);
         }
     }
 }
