@@ -56,3 +56,20 @@ F:\Day7\BITM\obj\Debug\BITM Works.pdb
 F:\BITM\BITM Works\obj\Debug\BITM_Works.Item.resources
 F:\BITM\BITM Works\obj\Debug\BITM_Works.Customer.resources
 F:\BITM\BITM Works\obj\Debug\BITM_Works.Orders.resources
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\bin\Debug\BITM Works.exe.config
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\bin\Debug\BITM Works.exe
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\bin\Debug\BITM Works.pdb
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM Works.csprojAssemblyReference.cache
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM_Works.Assiginment_3.resources
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM_Works.AssignmentFour.resources
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM_Works.ClasssFive.resources
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM_Works.Class_4.resources
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM_Works.Customer.resources
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM_Works.Home.resources
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM_Works.Orders.resources
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM_Works.Properties.Resources.resources
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM Works.csproj.GenerateResource.cache
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM Works.csproj.CoreCompileInputs.cache
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM Works.exe
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM Works.pdb
+C:\Users\Web App Develop .Net\Desktop\Shakil\BITM\obj\Debug\BITM_Works.ItemUI.resources
