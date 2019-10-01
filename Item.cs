@@ -16,12 +16,13 @@ namespace BITM_Works
         public Item()
         {
             InitializeComponent();
+            ShowItems();
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            string command = @"INSERT INTO [dbo].[Item]([ItemName],[ItemPrice],[Stock])VALUES('"+nameTextBox.Text+"','"+priceTextBox.Text+"','"+stockTextBox.Text+"')";
-            MessageBox.Show(db.ExecuteNoncommand(command));
+            string command = @"INSERT INTO [dbo].[Item]([Name],[Price])VALUES('"+nameTextBox.Text.ToUpper() + "','"+Convert.ToDouble(priceTextBox.Text)+"')";
+            MessageBox.Show(db.Insert(command));
             ShowItems();
         }
 
@@ -41,6 +42,43 @@ namespace BITM_Works
         {
             string command = @"Select*from Item";
             showDataGridView.DataSource = db.GetData(command);
+        }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            string updateCommand = @"UPDATE [dbo].[Item]SET [Name] ='"+UpdateNameTextBox.Text.ToUpper()+"',[Price] ='"+Convert.ToDouble(UpdatePriceTextBox.Text) +"' WHERE Id='"+Convert.ToInt32(UpdateIdTextBox.Text) +"'";
+            ShowItems();
+            MessageBox.Show(db.Update(updateCommand));
+        }
+
+        private void SerachButton_Click(object sender, EventArgs e)
+        {
+            string searchCommand = @"SELECT [Id],[Name],[Price]FROM [dbo].[Item] where Name='"+searchTextBox.Text.ToUpper()+ "'";
+            DataTable searchData=new DataTable();
+            searchData = db.GetData(searchCommand);
+            if (searchData.Rows.Count <= 0)
+            {
+                showDataGridView.DataSource = null;
+                MessageBox.Show("No item found");
+            }
+            else
+            {
+                showDataGridView.DataSource = searchData;
+            }
+        }
+
+        private void CustomerButton_Click(object sender, EventArgs e)
+        {
+            Customer customer=new Customer();
+            customer.Show();
+            this.Hide();
+        }
+
+        private void OrdersButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Orders orders=new Orders();
+            orders.Show();
         }
     }
 }

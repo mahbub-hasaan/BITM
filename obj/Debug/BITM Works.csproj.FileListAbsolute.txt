@@ -53,3 +53,6 @@ F:\Day7\BITM\obj\Debug\BITM Works.csproj.GenerateResource.cache
 F:\Day7\BITM\obj\Debug\BITM Works.csproj.CoreCompileInputs.cache
 F:\Day7\BITM\obj\Debug\BITM Works.exe
 F:\Day7\BITM\obj\Debug\BITM Works.pdb
+F:\BITM\BITM Works\obj\Debug\BITM_Works.Item.resources
+F:\BITM\BITM Works\obj\Debug\BITM_Works.Customer.resources
+F:\BITM\BITM Works\obj\Debug\BITM_Works.Orders.resources
