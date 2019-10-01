@@ -37,7 +37,7 @@ namespace BITM_Works
         private void AddOrderButton_Click(object sender, EventArgs e)
         {
             int quantity = Convert.ToInt32(quantityTextBox.Text);
-             double totalPrice = Price * Convert.ToInt32(quantityTextBox.Text);
+            double totalPrice = Price * Convert.ToInt32(quantityTextBox.Text);
             string command = @"INSERT INTO [dbo].[Order]([CustomerName],[ItemName],[TotalPrice],[Quantity])VALUES('"+customerNameTextBox.Text+"','"+itemTextBox.Text+"',"+totalPrice+","+ quantity + ")";
             MessageBox.Show(db.Insert(command));
             ShowOrders();
